@@ -1,8 +1,9 @@
 import React from 'react'
 import Homemain from './Homemain'
 import Intro from './Intro'
-import Skills from './Skills'
+import Skills from './Skills/Skills'
 import Contact from './Forms/Contact'
+import Projects from './Projects'
 
 
 const Home = () => {
@@ -12,7 +13,9 @@ const Home = () => {
       <Homemain/>
       </div>
       <Intro/>
+
       <Skills/>
+<Projects/>
       <Contact/>
     </div>
   )

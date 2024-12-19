@@ -45,7 +45,7 @@ const Navbar = ({ setActiveSection }) => {
   // Scroll effect to trigger navbar blur
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 10) {
         setIsNavbarBlurred(true);
       } else {
         setIsNavbarBlurred(false);
@@ -92,10 +92,10 @@ const Navbar = ({ setActiveSection }) => {
               <Link to="/" onClick={handleLinkClick}>Home</Link>
             </li>
             <li className="cursor-pointer font-light text-md hover:text-white transition-all duration-300 ease-in-out mx-3">
-              <a href="#introduction" onClick={handleLinkClick}>Introduction</a>
+              <a href="/#introduction" onClick={handleLinkClick}>Introduction</a>
             </li>
             <li className="cursor-pointer font-light text-md hover:text-white transition-all duration-300 ease-in-out mx-3">
-              <a href="#skills" onClick={handleLinkClick}>Skills</a>
+              <a href="/#skills" onClick={handleLinkClick}>Skills</a>
             </li>
 
             <div className="relative" ref={projectsDropdownRef}>
@@ -105,17 +105,28 @@ const Navbar = ({ setActiveSection }) => {
               </button>
               {showProjectsDropdown && (
                 <div className="absolute cursor-pointer w-[33vw] top-12 -left-44 rounded-lg backdrop-blur-sm p-1 shadow-lg">
-                  <div className="grid grid-cols-3 gap-x-2 gap-y-1 w-full">
+                  <div className="grid grid-cols-3 gap-x-2 gap-y-2 pb-4 w-full">
                     <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <a href="/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Consultancy</a>
+                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Consultancy</a>
                     </li>
                     <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <Link to="/burger-house" onClick={handleLinkClick}><Code2 /> Burger-house</Link>
+                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Burger House</a>
                     </li>
                     <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <Link to="/tailor-ecom" onClick={handleLinkClick}><Code2 /> Tailor e-com</Link>
+                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Weather App</a>
+                    </li>
+                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
+                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> To-do App</a>
+                    </li>
+                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
+                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Old Portfolio</a>
+                    </li>
+                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
+                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Tailor E-com</a>
                     </li>
                   </div>
+
+
                   <Link to="/projects" className="w-full" onClick={handleLinkClick}><div className="p-2 w-full text-center border border-[#705ADD] hover:bg-[#705ADD] hover:text-white ease-in-out duration-300 transition-all text-[#705ADD] rounded-lg">
                     View All Projects
                   </div></Link>
