@@ -19,7 +19,7 @@ const ProjectMainLayout = () => {
         </div>
         <div className="flex">
           {/* Sidebar toggle */}
-          <div className={`${sidebarToggle ? "absolute block" : "hidden"} lg:block h-full`}>
+          <div className={`${sidebarToggle ? "fixed  block" : "hidden"} lg:block h-full`}>
             <Sidebar toggleHandle={sidebarProps} /> {/* Pass the whole sidebarProps */}
           </div>
           <Outlet context={sidebarProps} />

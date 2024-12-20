@@ -74,7 +74,7 @@ const ProjectCard = () => {
         <img
           src={project.thumbnail}
           alt={project.title}
-          className="  object-cover h-40 rounded-lg"
+          className="  object-cover w-96 h-40 rounded-lg"
         />
 
 
