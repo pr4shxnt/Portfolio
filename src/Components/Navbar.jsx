@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Github, Instagram, MehIcon, Code2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import ProjectsData from "./Data/ProjectsData";
 
 const Navbar = ({ setActiveSection }) => {
   const [showProfilesDropdown, setShowProfilesDropdown] = useState(false);
@@ -104,26 +105,16 @@ const Navbar = ({ setActiveSection }) => {
                 <DropdownIcon isOpen={showProjectsDropdown} />
               </button>
               {showProjectsDropdown && (
-                <div className="absolute cursor-pointer w-[33vw] top-12 -left-44 rounded-lg backdrop-blur-sm p-1 shadow-lg">
+                <div className="absolute cursor-pointer w-[33vw] top-12 -left-44 rounded-lg bg-black bg-opacity-50 backdrop-blur-sm p-1 shadow-lg">
                   <div className="grid grid-cols-3 gap-x-2 gap-y-2 pb-4 w-full">
-                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Consultancy</a>
+                    {
+                        ProjectsData.map((project) => (
+                          <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
+                      <a href= {`/projects/${project.id}`} className="flex gap-2" onClick={handleLinkClick}><Code2 />{project.title}</a>
                     </li>
-                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Burger House</a>
-                    </li>
-                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Weather App</a>
-                    </li>
-                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> To-do App</a>
-                    </li>
-                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Old Portfolio</a>
-                    </li>
-                    <li className="py-2 flex justify-start text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all items-center gap-2">
-                      <a href="/projects/consultancy-web" className="flex gap-2" onClick={handleLinkClick}><Code2 /> Tailor E-com</a>
-                    </li>
+                        ))
+                    }
+
                   </div>
 
 

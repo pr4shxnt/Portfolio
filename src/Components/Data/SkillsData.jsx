@@ -18,6 +18,9 @@ import vscode from "../Projects/Assets/Icons/vscode.svg";
 import redux from "../Projects/Assets/Icons/redux.svg";
 import c from "../Projects/Assets/Icons/c-1.svg";
 import c2 from "../Projects/Assets/Icons/c.svg";
+import bootstrap from "../Projects/Assets/Icons/bootstrap.svg";
+import git from "../Projects/Assets/Icons/git.svg";
+import github from "../Projects/Assets/Icons/github.svg";
 
 const SkillsData = [
     {
@@ -45,7 +48,7 @@ const SkillsData = [
   {
     name: "Redux",
     logo: redux,
-    description:"Re"
+    description:"React Redux simplifies state management by providing a predictable, centralized store, enabling seamless communication between React components and global state."
   },
   {
     name: "Node.js",
@@ -159,6 +162,27 @@ const SkillsData = [
     logo: c,
     description:
       "C is a general-purpose programming language developed by Brian Kernighan and Dennis Ritchie in 1972. It is a statically-typed, compiled language that supports procedural programming and has a wide range of libraries and frameworks.",
+    link: "",
+  },
+  {
+    name: "Bootstrap",
+    logo: bootstrap,
+    description:
+      "Bootstrap is a CSS and JavaScript framework that helps you create responsive and mobile-friendly web layouts with ease.",
+    link: "",
+  },
+  {
+    name: "Git",
+    logo: git,
+    description:
+      "Git is a distributed version control system that allows you to track changes in your source code and collaborate with others on projects.",
+    link: "",
+  },
+  {
+    name: "GitHub",
+    logo: github,
+    description:
+      "GitHub is a web-based Git repository hosting service that provides version control, collaboration, and code hosting for software development projects.",
     link: "",
   }
 

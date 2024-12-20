@@ -12,7 +12,7 @@ import ProjectCard from "./Components/Projects/ProjectCard";
 const App = () => {
   return (
     <Router>
-      <ScrollToTop />
+
       <Navbar />
       <div className="h-screen">
         <Routes>

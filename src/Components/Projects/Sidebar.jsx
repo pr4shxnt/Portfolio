@@ -17,6 +17,10 @@ const Sidebar = ({ toggleHandle }) => {
         <div className="flex flex-col space-y-2">
           {ProjectsData.map((p) => (
             <NavLink
+            onClick={()=>{
+                setSidebarToggle(false);
+
+            }}
               key={p.id}
               to={`/projects/${p.id}`}
               className={({ isActive }) =>

@@ -14,8 +14,8 @@ const SkillCard = ({ skill }) => {
         onClick={handlePopupToggle}
         className="cursor-pointer flex flex-col items-center"
       >
-        <img src={skill.logo} className="h-20 w-20" alt={skill.name} />
-        <h2 className="text-white text-xl hover:text-gray-400 transition-all duration-300 ease-in-out mt-2">{skill.name}</h2>
+        <img src={skill.logo} className="h-10 w-10 md:h-20 md:w-20" alt={skill.name} />
+
       </div>
 
       {/* Background Blur and Popup */}
@@ -24,11 +24,12 @@ const SkillCard = ({ skill }) => {
           {/* Blurred Background */}
           <div
             className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"
+            onScroll={handlePopupToggle}
             onClick={handlePopupToggle} // Close popup when clicking outside
           ></div>
 
           {/* Popup Content */}
-          <div className="z-20 flex flex-col items-center bg-gray-900 text-white p-6 rounded shadow-lg w-3/4 max-w-md">
+          <div className="z-20 flex flex-col items-center bg-gray-900 text-white p-6 rounded-3xl shadow-lg w-3/4 max-w-md">
             <img
               src={skill.logo}
               alt={skill.name}
@@ -38,9 +39,10 @@ const SkillCard = ({ skill }) => {
             <p className="text-sm text-gray-300 text-center">
               {skill.description}
             </p>
+            <a href={skill.link} className="text-blue-500 text-sm font-thin underline">Learn from where I did</a>
             <button
               onClick={handlePopupToggle}
-              className="mt-4 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded transition"
+              className="p-2 w-1/2 mt-3 text-center border border-[#705ADD] hover:bg-[#705ADD] hover:text-white ease-in-out duration-300 transition-all text-[#705ADD] rounded-lg"
             >
               Close
             </button>
