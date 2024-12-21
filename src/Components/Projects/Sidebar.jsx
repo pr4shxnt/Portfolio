@@ -8,7 +8,7 @@ const Sidebar = ({ toggleHandle }) => {
 
   return (
     <div>
-      <div className="bg-gray-800 h-full md:min-h-[106vh] w-60 rounded p-4">
+      <div className="bg-gray-800 h-full md:min-h-screen w-60 rounded p-4">
         <div className="flex justify-between mb-4 items-center">
           <h2 className="text-white text-lg">Projects</h2>
           <div className='lg:hidden'>

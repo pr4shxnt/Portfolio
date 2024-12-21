@@ -75,7 +75,7 @@ const Homemain = ({ setActiveSection }) => {
           </h1>
         </div>
         <div className="flex justify-center w-full text-center">
-          <p className="text-white w-full px-4 md:px-[20vw]  text-center justify-center mt-2">
+          <p className="text-white w-full px-4 md:px-96 text-center justify-center mt-2">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
             nesciunt! Veniam sapiente molestias alias pariatur eos tempora optio
             voluptates cupiditate ducimus? Sed veritatis rem omnis suscipit

@@ -9,7 +9,7 @@ import ScrollToTop from './ScrollToTop'
 const Home = () => {
   return (
     <div className='' id='home'>
-         <ScrollToTop />
+
         <div className="h-screen">
 
       <Homemain/>

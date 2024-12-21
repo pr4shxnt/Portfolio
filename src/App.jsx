@@ -11,30 +11,41 @@ import ProjectCard from "./Components/Projects/ProjectCard";
 
 const App = () => {
   return (
-    <Router>
+    <div className="flex justify-center items-center min-h-screen">
+      <Router>
+        <ScrollToTop />
+        <div className="container flex flex-col justify-center items-center">
+          <Navbar />
+          <div className="flex-grow flex flex-col justify-center items-center">
+            <Routes>
+              {/* Static Pages */}
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/hire-me" element={<Hireme />} />
 
-      <Navbar />
-      <div className="h-screen">
-        <Routes>
-          {/* Static Pages */}
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/hire-me" element={<Hireme />} />
+              {/* Projects Section */}
+              <Route path="/projects" element={<ProjectMainLayout />}>
+                {/* Default project route */}
+                <Route index element={<Projects />} />
+                {/* Dynamic Project Description */}
+                <Route path=":projectId" element={<ProjectCard />} />
+              </Route>
 
-          {/* Projects Section */}
-          <Route path="/projects" element={<ProjectMainLayout />}>
-            {/* Default project route */}
-            <Route index element={<Projects />} />
-            {/* Dynamic Project Description */}
-            <Route path=":projectId" element={<ProjectCard />} />
-          </Route>
-
-          {/* Catch-all route for 404 */}
-          <Route path="*" element={<div>404 - Page Not Found</div>} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+              {/* Catch-all route for 404 */}
+              <Route
+                path="*"
+                element={
+                  <div className="text-xl font-bold">
+                    404 - Page Not Found
+                  </div>
+                }
+              />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </Router>
+    </div>
   );
 };
 
