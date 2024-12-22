@@ -3,16 +3,16 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='h-full mt-10 rounded-t-3xl w-full bg-[#1A1A1A] text-white flex flex-col justify-between pt-20'>
+    <div className='min-h-[70vh] mt-10 rounded-t-3xl w-full bg-[#1A1A1A] text-white flex flex-col justify-between pt-20'>
       <div className="w-full px-10 md:px-32 flex flex-col md:flex-row justify-between gap-10">
         {/* Left Section */}
-        <div className="md:w-[70%] flex flex-col">
+        <div className="md:w-[70%] flex flex-col gap-6">
           <h1 className="text-5xl text-white">Feel free to raise an issue or fix an error in GitHub.</h1>
           <form action="" className='my-3 text-white relative w-full md:pr-10' >
-                <input placeholder="Help me with the improvement...." className='w-full  bg-gray-100 bg-opacity-15 text-white outline-none  rounded-lg px-4 py-3' type="text" />
-                <div className="absolute top-0 right-0 md:right-10 rounded-r-lg bg-gray-950 bg-opacity-70 p-3 ">
+                <input placeholder="send e-mail for requests." className='w-full  bg-gray-100 bg-opacity-15 text-white outline-none  rounded-lg px-4 py-3' type="text" />
+                <button className="absolute top-0 right-0 md:right-10 rounded-r-lg bg-gray-950 bg-opacity-70 p-3 ">
                 <ArrowBigRightDash />
-                </div>
+                </button>
             </form>
 
 
