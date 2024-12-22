@@ -44,7 +44,7 @@ const ProjectsData = [
     ],
     status: "Completed",
     thumbnail: portfolioTn,
-    link: "", // Replace with actual image path
+    link: "https://github.com/pr4shxnt/portfolio.pr", // Replace with actual image path
   },
   {
     id: "project-2",
@@ -58,7 +58,7 @@ const ProjectsData = [
     ],
     status: "Completed",
     thumbnail: consultancy,
-    link: "",
+    link: "https://github.com/pr4shxnt/UDAEH",
   },
   {
     id: "project-3",
@@ -78,7 +78,7 @@ Burger House was more than just a project; it was a learning experience that all
     ],
     status: "Completed",
     thumbnail: bhThumbnail,
-    link: "",
+    link: "https://github.com/pr4shxnt/BurgerHouse-Project",
   },
   {
     id: "project-4",
@@ -100,7 +100,7 @@ Completing this Todo app has not only sharpened my technical skills but also pro
     ],
     status: "Completed",
     thumbnail: todo,
-    link: "",
+    link: "https://github.com/pr4shxnt/to-do_frontend",
   },
   {
     id: "project-5",
@@ -122,7 +122,7 @@ Weatherize was a valuable project for improving my skills in integrating APIs an
     ],
     status: "Completed",
     thumbnail: weather,
-    link: "",
+    link: "https://github.com/pr4shxnt/Weather-Web-App",
   },
   {
     id: "project-6",
@@ -150,7 +150,7 @@ This project has been an excellent opportunity to implement advanced development
     ],
     status: "In progress",
     thumbnail: tailor,
-    link: "",
+    link: "https://github.com/pr4shxnt/Tailor",
   },
   {
     id: "project-7",
@@ -174,7 +174,7 @@ This project was a valuable experience in teamwork and full-stack development. M
     ],
     status: "Group Project",
     thumbnail: imThumbnail,
-    link: "",
+    link: "https://jevee-frontend.vercel.app/",
   },
 ];
 

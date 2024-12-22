@@ -65,7 +65,7 @@ const ProjectCard = () => {
             <span className="font-semibold">Status:</span> {project.status}
           </p>
           <div className="my-2 flex text-center justify-center">
-            <a href={project.link} className="">
+            <a href={project.link} target="_blank" className="">
               <button className="py-2 rounded block md:hidden font-light px-2  text-center  bg-[#705ADD]  text-[white] ">
                 Open the Project in github
               </button>
@@ -78,7 +78,7 @@ const ProjectCard = () => {
           <p className="text-gray-700 mb-4">{project.description}</p>
 
           <div className="my-2 flex text-center justify-start">
-            <a href={project.link} className="">
+            <a href={project.link} target="_blank" className="">
               <button className="py-2 hidden md:block rounded font-light px-2  text-center  bg-[#705ADD]  text-[white] ">
                 Open the Project in github
               </button>

@@ -67,7 +67,7 @@ const Homemain = ({ setActiveSection }) => {
       ></div>
 
       {/* Content container */}
-      <div className="h-full items-center flex flex-col justify-center text-center relative z-10">
+      <div className="h-full w-screen items-center flex flex-col justify-center text-center relative z-10">
         <div className="flex justify-center w-full text-center">
           <h1 className="text-3xl font-bold text-[#705ADD]">
             <p className="text-white text-2xl">I am a </p>
@@ -76,11 +76,7 @@ const Homemain = ({ setActiveSection }) => {
         </div>
         <div className="flex justify-center w-full text-center">
           <p className="text-white w-full px-4 md:px-52 lg:px-96 text-center justify-center mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-            nesciunt! Veniam sapiente molestias alias pariatur eos tempora optio
-            voluptates cupiditate ducimus? Sed veritatis rem omnis suscipit
-            debitis sint deserunt distinctio dicta nisi ab aspernatur inventore
-            dolores optio, incidunt cupiditate odit ullam tempore possimus.
+          Welcome to Prashant's portfolio! Dive into a world of innovation where creativity meets expertise. Explore diverse projects showcasing skills in full-stack development, the MERN stack, and tailored solutions. Let's build something remarkable together. And dont forget to check out my work, skills, and accomplishments.
           </p>
         </div>
         <NavLink to="/hire-me">
