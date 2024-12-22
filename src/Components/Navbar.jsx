@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Github, Instagram, MehIcon, Code2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import ProjectsData from "./Data/ProjectsData";
 
 const Navbar = ({ setActiveSection }) => {
@@ -101,14 +102,14 @@ const Navbar = ({ setActiveSection }) => {
               </Link>
             </li>
             <li className="cursor-pointer font-light text-md hover:text-white transition-all duration-300 ease-in-out mx-3">
-              <a href="/#introduction" onClick={handleLinkClick}>
+              <HashLink smooth to="/#introduction" onClick={handleLinkClick}>
                 Introduction
-              </a>
+              </HashLink>
             </li>
             <li className="cursor-pointer font-light text-md hover:text-white transition-all duration-300 ease-in-out mx-3">
-              <a href="/#skills" onClick={handleLinkClick}>
+              <HashLink smooth to="/#skills" onClick={handleLinkClick}>
                 Skills
-              </a>
+              </HashLink>
             </li>
             <div className="relative" ref={projectsDropdownRef}>
               <button
@@ -146,9 +147,9 @@ const Navbar = ({ setActiveSection }) => {
               )}
             </div>
             <li className="mx-3 cursor-pointer font-light text-md hover:text-white transition-all duration-300 ease-in-out">
-              <a href="/#contact" onClick={handleLinkClick}>
+              <HashLink smooth to="/#contact" onClick={handleLinkClick}>
                 Contact
-              </a>
+              </HashLink>
             </li>
           </ul>
 
@@ -168,12 +169,22 @@ const Navbar = ({ setActiveSection }) => {
             {showProfilesDropdown && (
               <ul className="absolute bg-black bg-opacity-30 backdrop-blur-lg text-white top-16 rounded-lg w-[15vw] right-0 p-2 shadow-lg">
                 <li className="p-2 flex items-center text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all gap-2">
-                  <a target="_blank" className="flex gap-2" href="https://instagram.com/pr4xnt" onClick={handleLinkClick}>
+                  <a
+                    target="_blank"
+                    className="flex gap-2"
+                    href="https://instagram.com/pr4xnt"
+                    onClick={handleLinkClick}
+                  >
                     <Instagram /> Instagram
                   </a>
                 </li>
                 <li className="p-2 flex items-center text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all gap-2">
-                  <a target="_blank" className="flex gap-2" href="https://github.com/pr4shxnt" onClick={handleLinkClick}>
+                  <a
+                    target="_blank"
+                    className="flex gap-2"
+                    href="https://github.com/pr4shxnt"
+                    onClick={handleLinkClick}
+                  >
                     <Github /> Github
                   </a>
                 </li>
@@ -201,33 +212,29 @@ const Navbar = ({ setActiveSection }) => {
             </Link>
           </li>
           <li className="border-b p-2 w-full text-center">
-            <a href="/#introduction" onClick={handleLinkClick}>
+            <HashLink smooth to="/#introduction" onClick={handleLinkClick}>
               Introduction
-            </a>
+            </HashLink>
           </li>
           <li className="border-b p-2 w-full text-center">
-            <a href="/#skills" onClick={handleLinkClick}>
+            <HashLink smooth to="/#skills" onClick={handleLinkClick}>
               Skills
-            </a>
+            </HashLink>
           </li>
           <li className="border-b p-2 w-full text-center">
-            <a href="/projects" onClick={handleLinkClick}>
+            <Link to="/projects" onClick={handleLinkClick}>
               Projects
-            </a>
+            </Link>
           </li>
           <li className="border-b p-2 w-full text-center">
-            <a href="#contact" onClick={handleLinkClick}>
+            <HashLink smooth to="/#contact" onClick={handleLinkClick}>
               Contact
-            </a>
+            </HashLink>
           </li>
-
-                <li className="border-b p-2 w-full text-center">
-                  <Link to="/hire-me" onClick={handleLinkClick}>
-                    Hire Me
-                  </Link>
-
-
-
+          <li className="border-b p-2 w-full text-center">
+            <Link to="/hire-me" onClick={handleLinkClick}>
+              Hire Me
+            </Link>
           </li>
         </ul>
       </div>

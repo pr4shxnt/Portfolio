@@ -55,6 +55,7 @@ const Homemain = ({ setActiveSection }) => {
   return (
     <div className="h-full relative">
       {/* Background image container */}
+
       <div
         className={`absolute inset-0 z-0 ${
           fade ? "opacity-0" : "opacity-100"
