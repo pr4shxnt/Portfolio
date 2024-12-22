@@ -100,7 +100,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="flex flex-col w-full md:w-4/12 p-4 gap-5">
+        <div className="flex flex-col w-full lg:w-4/12 p-4 gap-5">
           <form
             ref={form}
             onSubmit={sendEmail}

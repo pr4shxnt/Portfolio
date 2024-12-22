@@ -16,7 +16,7 @@ const ProjectCard = () => {
   }
 
   return (
-    <div className="bg-black flex text-white rounded-lg shadow">
+    <div className="bg-black h-full flex text-white rounded-lg shadow">
       {sidebarToggle === true ? (
         ""
       ) : (
@@ -27,10 +27,10 @@ const ProjectCard = () => {
           <ArrowBigRight />
         </div>
       )}
-      <div className="flex flex-col md:flex-row pt-6  gap-10 justify-between space-x-6">
+      <div className="flex flex-col lg:flex-row pt-6  gap-10 justify-between space-x-6">
         {/* Project Thumbnail */}
 
-        <div className="md:hidden flex flex-col gap-4">
+        <div className="lg:hidden flex flex-col gap-4">
           <img
             src={project.thumbnail}
             alt={project.title}
@@ -72,7 +72,7 @@ const ProjectCard = () => {
             </a>
           </div>
         </div>
-        <div className="md:w-4/5">
+        <div className="md:w-full">
           {/* Project Title and Description */}
           <h1 className="text-2xl font-bold mb-4">{project.title}</h1>
           <p className="text-gray-700 mb-4">{project.description}</p>
@@ -89,7 +89,7 @@ const ProjectCard = () => {
 
           {/* Project Status */}
         </div>
-        <div className="hidden md:flex flex-col gap-4">
+        <div className="hidden lg:flex flex-col gap-4">
           <img
             src={project.thumbnail}
             alt={project.title}
@@ -98,9 +98,9 @@ const ProjectCard = () => {
 
           <ul className="flex items-start space-x-4 flex-col">
             <div className="">
-              <h2 className="text-lg font-semibold mb-2">Tech Stack:</h2>
+              <h2 className="text-lg w-80 font-semibold mb-2">Tech Stack:</h2>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {project.techStack.map((tech) => (
                 <li
                   key={tech.name}

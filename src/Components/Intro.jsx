@@ -41,7 +41,7 @@ const Intro = () => {
   }, [transitioning]);
 
   return (
-    <div id="introduction" className="flex relative flex-col gap-10 text-center min-h-[70vh] bg-black p-16 text-white">
+    <div id="introduction" className="flex relative flex-col gap-10 text-center min-h-[65vh] md:min-h-[45vh] lg:min-h-[500px] bg-black p-16 text-white">
       {/* Title/Header */}
       <h1 className="text-4xl font-bold mb-8">Introduction</h1>
 
@@ -50,7 +50,7 @@ const Intro = () => {
 
 
         <div
-          className={`bg-black bg-opacity-50 p- md:w-1/3 transition-opacity duration-1000 ease-in ${transitioning ? "opacity-0" : "opacity-100"}`}
+          className={`bg-black bg-opacity-50 w-full md:w-1/2 lg:w-1/3 transition-opacity duration-1000 ease-in ${transitioning ? "opacity-0" : "opacity-100"}`}
         >
           <p className="text-lg md:text-xl">{introductions[currentParagraph].text}</p>
         </div>

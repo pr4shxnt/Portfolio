@@ -70,7 +70,7 @@ const Hireme = () => {
             <iframe
               src={CV}
               title="My CV"
-              className="w-3/4 h-screen rounded-md shadow-md"
+              className="w-3/4 h-[50vh] lg:w-1/2 lg:h-screen rounded-md shadow-md"
               frameBorder="0"
             ></iframe>
             <p className="text-sm text-gray-500 text-center mt-4">

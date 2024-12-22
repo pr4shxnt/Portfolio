@@ -14,3 +14,33 @@ body{
 html {
     scroll-behavior: smooth;
   }
+
+  /* For modern browsers */
+element {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+
+  element::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+
+  /* For modern browsers */
+html, body {
+     /* Prevents scrolling on the entire page */
+  }
+
+  /* For Firefox */
+  html {
+    scrollbar-width: none; /* Disables scrollbar */
+  }
+
+  /* For Internet Explorer and Edge */
+  html {
+    -ms-overflow-style: none; /* Disables scrollbar */
+  }
+
+  /* For Chrome, Safari, and Opera */
+  html::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+  }
