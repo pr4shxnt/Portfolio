@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <Router>
+      <Router basename="/Portfolio">
       <DynamicTitle />
         <ScrollToTop />
         <div className="container flex flex-col justify-center items-center">
