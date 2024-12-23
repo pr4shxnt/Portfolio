@@ -10,12 +10,23 @@ const Hireme = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Prepare the template parameters with checkbox state
+    const templateParams = {
+      organization: org ? "Yes" : "No", // Send as Yes/No in the email
+      from_name: form.current.from_name.value,
+      contact_number: form.current.contact_number.value,
+      from_email: form.current.from_email.value,
+      role: form.current.role.value,
+      message: form.current.message.value,
+    };
+
     emailjs
       .sendForm(
         "service_v97m70m",
         "template_n5gm16i",
         form.current,
-        "UMUiJfY7eow45AAN9"
+        "UMUiJfY7eow45AAN9",
+        templateParams // Include templateParams here
       )
       .then(
         () => {
@@ -83,11 +94,7 @@ const Hireme = () => {
         ) : (
           /* Hire Me Form Section */
           <div className="flex flex-col items-center ">
-            <form
-              ref={form}
-              onSubmit={sendEmail}
-              className="space-y-4 md:w-1/2 "
-            >
+            <form ref={form} onSubmit={sendEmail} className="space-y-4 md:w-1/2">
               {/* Organization Checkbox */}
               <label className="text-white" htmlFor="organization">
                 Is this an organization?
