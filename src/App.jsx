@@ -19,7 +19,7 @@ const App = () => {
         <div className="container flex flex-col justify-center items-center">
           <Navbar />
           <div className="flex-grow flex flex-col justify-center items-center">
-            <Routes>
+            <Routes >
               {/* Static Pages */}
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
