@@ -53,7 +53,7 @@ const Homemain = ({ setActiveSection }) => {
   };
 
   return (
-    <div className="h-full relative">
+    <div id="home" className="h-full relative">
       {/* Background image container */}
 
       <div

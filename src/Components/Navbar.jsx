@@ -97,7 +97,7 @@ const Navbar = ({ setActiveSection }) => {
         <div className="hidden lg:flex justify-between w-[65%]">
           <ul className="flex items-center">
             <li className="cursor-pointer font-light text-md hover:text-white transition-all duration-300 ease-in-out mx-3">
-              <Link to="/" onClick={handleLinkClick}>
+              <Link to="" onClick={handleLinkClick}>
                 Home
               </Link>
             </li>
