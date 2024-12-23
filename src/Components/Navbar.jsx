@@ -128,7 +128,7 @@ const Navbar = ({ setActiveSection }) => {
                         className="py-2 text-gray-400 hover:text-[#705ADD] ease-in-out duration-300 transition-all flex items-center gap-2"
                       >
                         <a
-                          href={`/projects/${project.id}`}
+                          href={`/Portfolio/projects/${project.id}`}
                           onClick={handleLinkClick}
                           className="flex gap-2"
                         >
