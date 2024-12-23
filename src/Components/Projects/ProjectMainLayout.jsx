@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
+import banner from "../../assets/images/bannerProjects.png"
 
 const ProjectMainLayout = () => {
   // State for sidebar toggle
@@ -16,7 +17,7 @@ const ProjectMainLayout = () => {
       <div className="pt-16 min-h-full px-3 md:px-32 container relative flex flex-col gap-3">
         <div className="hidden md:flex items-center justify-center">
           <img
-            src="https://media.licdn.com/dms/image/D4D12AQHs2FlTkKUUag/article-cover_image-shrink_720_1280/0/1695093973945?e=2147483647&v=beta&t=V60MWTTQyOEZRApsib1UDT4T0c6jVU8rK63NZHGqEj8"
+            src={banner}
             className=""
             alt=""
           />
