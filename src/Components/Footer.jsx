@@ -1,6 +1,7 @@
 import { ArrowBigRightDash } from 'lucide-react';
 import React from 'react';
 import ProjectsData from './Data/ProjectsData';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -29,13 +30,13 @@ const Footer = () => {
                       <li
                         key={project.id}
                       >
-                        <a
+                        <Link
                         className='hover:underline'
-                          href={`/projects/${project.id}`}
+                          to={`/projects/${project.id}`}
                         >
 
                           {project.title}
-                        </a>
+                        </Link>
                       </li>
                     ))}
               </ul>
@@ -45,24 +46,24 @@ const Footer = () => {
           <div>
             <h1 className='text-sm md:text-2xl  font-semibold text-white mb-4'>Quick Links</h1>
             <ul className='text-xs md:text-sm'>
-              <a href="/" className='hover:underline'>
+              <Link to="/" className='hover:underline'>
                 <li>Home</li>
-              </a>
-              <a href="/#introduction" className='hover:underline'>
+              </Link>
+              <a href="#introduction" className='hover:underline'>
                 <li>Introduction</li>
               </a>
-              <a href="/#skills" className='hover:underline'>
+              <a href="#skills" className='hover:underline'>
                 <li>Skills</li>
               </a>
-              <a href="/projects" className='hover:underline'>
+              <Link to="/projects" className='hover:underline'>
                 <li>Projects</li>
-              </a>
-              <a href="/#contact" className='hover:underline'>
+              </Link>
+              <a href="#contact" className='hover:underline'>
                 <li>Contact</li>
               </a>
-              <a href="/hire-me" className='hover:underline'>
+              <Link to="/hire-me" className='hover:underline'>
                 <li>Hire Me</li>
-              </a>
+              </Link>
             </ul>
           </div>
 
