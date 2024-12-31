@@ -49,16 +49,16 @@ const Footer = () => {
               <Link to="/" className='hover:underline'>
                 <li>Home</li>
               </Link>
-              <a href="#introduction" className='hover:underline'>
+              <a href="/#introduction" className='hover:underline'>
                 <li>Introduction</li>
               </a>
-              <a href="#skills" className='hover:underline'>
+              <a href="/#skills" className='hover:underline'>
                 <li>Skills</li>
               </a>
               <Link to="/projects" className='hover:underline'>
                 <li>Projects</li>
               </Link>
-              <a href="#contact" className='hover:underline'>
+              <a href="/#contact" className='hover:underline'>
                 <li>Contact</li>
               </a>
               <Link to="/hire-me" className='hover:underline'>
