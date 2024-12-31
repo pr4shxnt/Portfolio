@@ -57,24 +57,23 @@ const DynamicTitle = () => {
     const location = useLocation();
 
     useEffect(() => {
-      switch (location.pathname) {
-        case "/":
-          document.title = "Home | Prashant Adhikari";
-          break;
-        case "/projects":
-          document.title = "Projects | Prashant Adhikari";
-          break;
-          case "/hire-me":
-          document.title = "Hire | Prashant Adhikari";
-          break;
-        case "/projects/:projectId":
-        document.title = "Project | Prashant Adhikari";
-        break;
+      if (location.pathname === "/") {
+        document.title = "Home | Prashant Adhikari";
+      } else if (location.pathname === "/projects") {
+        document.title = "Projects | Prashant Adhikari";
+      } else if (location.pathname === "/hire-me") {
+        document.title = "Hire | Prashant Adhikari";
+      } else if (/^\/projects\/[\w-]+$/.test(location.pathname)) {
+        const projectId = location.pathname.split("/").pop(); // Extract projectId from the URL
+        document.title = `${decodeURIComponent(projectId)} | Prashant Adhikari`;
+      } else {
+        document.title = "404 | Prashant Adhikari";
       }
     }, [location]);
 
     return null; // This component doesn't render anything visually.
   };
+
 
 
 export default App;

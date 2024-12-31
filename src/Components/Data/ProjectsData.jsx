@@ -33,7 +33,7 @@ import todo from "../../assets/images/todo.png";
 
 const ProjectsData = [
   {
-    id: "project-1",
+    id: "Portfolio",
     title: "Old Portfolio",
     description: `My old portfolio included a CV section to display my qualifications, an information section to describe my professional journey, and social media cards to link to my profiles. While it was a good representation of my skills and background, it had some key limitations. One major drawback was the lack of a contact form, which made it difficult for potential employers, clients, or collaborators to reach out to me directly. This made the portfolio more of a static showcase than an interactive platform.The updated version of my portfolio is a significant improvement. The most notable enhancement is the addition of a "Hire Me" form, which allows visitors to contact me directly with job offers, freelance opportunities, or inquiries. This interactive feature makes the portfolio much more dynamic and user-friendly, providing a clear and easy way for others to engage with me. The form serves as a direct call to action, enabling me to establish connections and expand my professional network. Apart from the contact feature, the design of the new portfolio has been significantly modernized. The layout is cleaner, with improved navigation and a more professional aesthetic, offering a smoother browsing experience for visitors. The portfolio also better showcases my skills, projects, and achievements, making it easier for potential employers to evaluate my work. Additionally, the overall responsiveness of the design ensures that the portfolio looks great on all devices, whether viewed on a desktop, tablet, or mobile phone.In conclusion, while my old portfolio served as a basic showcase of my work, the new version is far more comprehensive. The inclusion of the "Hire Me" form and overall design improvements make it a more functional and engaging tool for potential career opportunities.`,
     techStack: [
@@ -47,7 +47,7 @@ const ProjectsData = [
     link: "https://github.com/pr4shxnt/portfolio.pr", // Replace with actual image path
   },
   {
-    id: "project-2",
+    id: "Consultancy",
     title: "Consultancy",
     description: `The educational consultancy website I developed focuses on IELTS/PTE exam preparation, entrance exam coaching, and other academic services. It features a clean and simple layout, ensuring easy navigation for prospective students. The website includes a contact form, allowing visitors to inquire about services, schedule consultations, or ask questions directly through the site, streamlining communication. Additionally, the site displays testimonials from past students, helping to establish credibility and trust with potential clients by showcasing their positive experiences. Built using basic HTML, the website is lightweight, easy to maintain, and quick to load. However, its simplicity is both a strength and a limitation. While the straightforward design provides essential information about the services offered, it lacks the interactivity and advanced features that could enhance the overall user experience. The site could benefit from modern design elements, interactive multimedia, and JavaScript to improve its functionality and user engagement. Despite this, the core purpose of the website is fulfilled — providing clear details about services and facilitating communication. The contact form and testimonials are key components that help establish trust with new clients. In the future, the website could be expanded with additional features like an FAQ section, service booking, or a blog to engage users and provide more value. By focusing on enhancing the visual design and adding more interactivity, the website could better cater to the needs of students looking for academic assistance while still maintaining its simplicity and functionality. Please support me by starring the code in Github, you can redirect to it through the link below.`,
     techStack: [
@@ -61,7 +61,7 @@ const ProjectsData = [
     link: "https://github.com/pr4shxnt/UDAEH",
   },
   {
-    id: "project-3",
+    id: "Burger-House",
     title: "Burger House",
     description: `Two years ago, I created a project called Burger House, a fully functional website built using only HTML, CSS, and JavaScript. This project was designed to simulate an online presence for a fast-food restaurant specializing in burgers. It allowed users to explore the menu, customize their orders, and view an interactive cart, showcasing my ability to build user-friendly and engaging web interfaces with core web technologies.
 
@@ -81,7 +81,7 @@ Burger House was more than just a project; it was a learning experience that all
     link: "https://github.com/pr4shxnt/BurgerHouse-Project",
   },
   {
-    id: "project-4",
+    id: "To-Do",
     title: "To-do App",
     description: `I’ve recently completed a Todo App using the MERN stack (MongoDB, Express, React, Node.js), which has become an invaluable tool for managing my projects and boosting productivity. This application allows users to organize their tasks efficiently by providing functionalities to add, edit, delete, and mark tasks as complete. It’s a practical project that highlights my full-stack development skills and has also proven to be incredibly useful in my day-to-day work.
 
@@ -103,7 +103,7 @@ Completing this Todo app has not only sharpened my technical skills but also pro
     link: "https://github.com/pr4shxnt/to-do_frontend",
   },
   {
-    id: "project-5",
+    id: "Weatherize",
     title: "Weather App",
     description: `I recently completed a project called Weatherize, a simple yet effective weather app designed to provide users with real-time weather updates. Built using HTML, CSS, and JavaScript, the app focuses on functionality and user experience, making it a reliable tool for anyone who wants quick access to weather information.
 
@@ -125,7 +125,7 @@ Weatherize was a valuable project for improving my skills in integrating APIs an
     link: "https://github.com/pr4shxnt/Weather-Web-App",
   },
   {
-    id: "project-6",
+    id: "e-commerce",
     title: "E-com app",
     description: `I am currently working on an e-commerce tailor application that combines modern web development technologies to deliver a fully functional platform for ordering customized products. Built using the MERN stack (MongoDB, Express, React, and Node.js), Tailwind CSS, and Redux, this project is designed to provide a seamless and personalized shopping experience for users.
 
@@ -153,7 +153,7 @@ This project has been an excellent opportunity to implement advanced development
     link: "https://github.com/pr4shxnt/Tailor",
   },
   {
-    id: "project-7",
+    id: "Medical-ecom",
     title: "Itahari Medicals",
     description: `I recently contributed to a group project called Itahari Medicals, a comprehensive web application designed to streamline medical services and enhance user convenience. This project was developed using the MERN stack (MongoDB, Express, React, and Node.js) along with Redux for state management and Bootstrap for responsive design. My role in the project was pivotal, as I was responsible for leading the frontend development and ensuring seamless integration with the backend.
 
