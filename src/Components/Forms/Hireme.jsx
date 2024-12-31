@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import CV from "../../assets/PrashantCV.pdf";
+import CV from "../../assets/PrashantAdhikariResume.pdf";
 
 const Hireme = () => {
   const [showForm, setShowForm] = useState(true);
