@@ -19,10 +19,7 @@ import redux from "../Projects/Assets/Icons/redux.svg";
 import c from "../Projects/Assets/Icons/c-1.svg";
 import c2 from "../Projects/Assets/Icons/c.svg";
 import bootstrap from "../Projects/Assets/Icons/bootstrap.svg";
-import git from "../Projects/Assets/Icons/git.svg";
-import github from "../Projects/Assets/Icons/github.svg";
 import express from "../Projects/Assets/Icons/express.svg";
-
 import bhThumbnail from "../../assets/images/BurgerHouse.png";
 import imThumbnail from "../../assets/images/jeevee.png";
 import portfolioTn from "../../assets/images/oldPortfolio.png";
@@ -30,6 +27,7 @@ import consultancy from "../../assets/images/UDAEH.png";
 import weather from "../../assets/images/weather.png";
 import tailor from "../../assets/images/tailor.png";
 import todo from "../../assets/images/todo.png";
+import sfThumbnail from "../../assets/images/sfThumbnail.png"
 
 const ProjectsData = [
   {
@@ -150,7 +148,7 @@ This project has been an excellent opportunity to implement advanced development
     ],
     status: "In progress",
     thumbnail: tailor,
-    link: "https://github.com/pr4shxnt/Tailor",
+    link: "https://tailor-nu.vercel.app",
   },
   {
     id: "Medical-ecom",
@@ -176,6 +174,23 @@ This project was a valuable experience in teamwork and full-stack development. M
     thumbnail: imThumbnail,
     link: "https://jevee-frontend.vercel.app/",
   },
+  {
+    id:"School-web",
+    techStack:[ { name: "HTML", icon: html },
+    { name: "CSS", icon: css },
+    { name: "React", icon: reactLogo },
+    { name: "Node.js", icon: nodeLogo },
+    { name: "Mongo", icon: mongoLogo },
+    { name: "Express", icon: express },
+    { name: "Tailwind", icon: tailwindLogo },
+    { name: "Redux", icon: redux },
+    { name: "Jasmine", icon: Jasmine },],
+    title: "School Landing Page",
+    status: "Static pages remains",
+    link: "https://github.com/pr4shxnt/Frontend_school",
+    description:"I developed a school management web application using the MERN (MongoDB, Express.js, React.js, and Node.js) stack, incorporating Tailwind CSS for a modern and responsive UI. This platform streamlines administrative tasks, enhances communication, and simplifies school management by offering features like student record management, attendance tracking, assignment handling, and announcement dissemination. The backend, built with Node.js and Express.js, ensures efficient API handling and database operations, while MongoDB stores structured data securely. The frontend, developed in React.js with Tailwind CSS, provides an intuitive and dynamic user interface. Teachers can upload assignments, mark attendance, and send notifications, while students and parents can access study materials, grades, and important announcements. The system also includes authentication and role-based access control for security. By leveraging the MERN stack, the application offers a seamless and scalable solution, improving efficiency in school operations while providing a user-friendly experience for administrators, teachers, students, and parents.",
+    thumbnail: sfThumbnail
+  }
 ];
 
 export default ProjectsData;
