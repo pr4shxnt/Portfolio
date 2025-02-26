@@ -15,7 +15,6 @@ const Homemain = ({ setActiveSection }) => {
 
   ];
 
-  // Change background image every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setFade(true); // Start fading out
