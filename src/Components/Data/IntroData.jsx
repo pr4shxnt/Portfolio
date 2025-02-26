@@ -16,7 +16,7 @@ const introductions = [
         image: "image4.jpg"
       },
       {
-        text: "Thank you for taking the time to explore my work. I’m excited to share my story and achievements with you. Let’s connect and create something extraordinary together!",
+        text: "Thank you for taking the time to explore my work. I’m excited to share my story and achievements with you. Let’s connect and create something extraordinary together and build!",
         image: "image5.jpg"
       }
 ]
