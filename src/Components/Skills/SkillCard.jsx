@@ -33,7 +33,7 @@ const SkillCard = ({ skill }) => {
       >
         <img
           src={skill.logo}
-          className="h-10 w-10 md:h-20 md:w-20"
+          className="h-[55px] w-12h-[55px] md:h-20 md:w-20"
           alt={skill.name}
           loading="lazy"
         />

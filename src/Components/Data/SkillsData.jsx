@@ -28,14 +28,14 @@ const SkillsData = [
         logo: html,
         description:
           "HTML5 is the latest version of the HTML standard, it allows you to create web pages and web applications.",
-        link: "",
+        link: "https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg",
       },
     {
         name: "CSS3",
         logo: css,
         description:
           "CSS3 is a standard for describing the presentation of web documents written in HTML. It allows you to create stylesheets and make your web pages visually appealing.",
-        link: "",
+        link: "https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg",
       },
 
   {
@@ -43,7 +43,7 @@ const SkillsData = [
     logo: reactLogo,
     description:
       "React JS is a Javascript library for frontend development applications, it makes the work easier than basic html. It also allows you to easily create and manipulate React components. ",
-    link: "",
+    link: "https://www.youtube.com/playlist?list=PLwGdqUZWnOp1Rab71vx2zMF6qpwGDB2Z1",
   },
   {
     name: "Redux",
@@ -86,14 +86,6 @@ const SkillsData = [
     link: "",
   },
   {
-    name: "Django",
-    logo: django,
-    description:
-      "Django is a high-level Python web framework that helps you build web applications quickly and easily.",
-    link: "",
-  }
-  ,
-  {
     name: "Firebase",
     logo: firebase,
     description:
@@ -119,15 +111,7 @@ const SkillsData = [
     logo: js,
     description:
       "JavaScript is a high-level, interpreted, and object-oriented programming language that adds functions, classes, and events to HTML documents.",
-    link: "",
-  },
-
-  {
-    name: "Linux",
-    logo: linux,
-    description:
-      "Linux is a free and open-source operating system that provides a wide range of tools and applications for computer users.",
-    link: "",
+    link: "https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg",
   },
   {
     name: "Next.js",
@@ -148,20 +132,6 @@ const SkillsData = [
     logo: vscode,
     description:
       "Visual Studio Code is a free and open-source code editor developed by Microsoft. It provides a rich set of features and plugins for writing and debugging code.",
-    link: "",
-  },
-  {
-    name: "C++",
-    logo: c2,
-    description:
-      "C++ is a general-purpose programming language developed by Bjarne Stroustrup in 1985. It is a statically-typed, compiled language that supports object-oriented programming and has a wide range of libraries and frameworks.",
-    link: "",
-  },
-  {
-    name: "C",
-    logo: c,
-    description:
-      "C is a general-purpose programming language developed by Brian Kernighan and Dennis Ritchie in 1972. It is a statically-typed, compiled language that supports procedural programming and has a wide range of libraries and frameworks.",
     link: "",
   },
   {
